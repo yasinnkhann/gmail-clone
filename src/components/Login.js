@@ -1,9 +1,9 @@
 import React from 'react';
-import '../styles/Login.css';
-import { login } from '../features/userSlice';
-import { Button } from '@material-ui/core';
-import { auth, provider } from '../firebaseConfig.js';
 import { useDispatch } from 'react-redux';
+import { Button } from '@material-ui/core';
+import { login } from '../features/userSlice.js';
+import { auth, provider } from '../firebaseConfig.js';
+import '../styles/Login.css';
 
 function Login() {
   const dispatch = useDispatch();
@@ -19,7 +19,7 @@ function Login() {
           })
         );
       })
-      .catch(error => alert(error.message));
+      .catch(err => alert(err.message));
   };
 
   return (

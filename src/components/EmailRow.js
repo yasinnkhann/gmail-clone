@@ -1,18 +1,18 @@
 import React from 'react';
-import Checkbox from '@material-ui/core/Checkbox';
-import { IconButton } from '@material-ui/core';
-import StarBorderOutlinedIcon from '@material-ui/icons/StarBorderOutlined';
-import LabelImportantOutlinedIcon from '@material-ui/icons/LabelImportantOutlined';
-import '../styles/EmailRow.css';
 import { useHistory } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { selectMail } from '../features/mailSlice';
+import { IconButton } from '@material-ui/core';
+import Checkbox from '@material-ui/core/Checkbox';
+import StarBorderOutlinedIcon from '@material-ui/icons/StarBorderOutlined';
+import LabelImportantOutlinedIcon from '@material-ui/icons/LabelImportantOutlined';
+import { selectMail } from '../features/mailSlice.js';
+import '../styles/EmailRow.css';
 
 function EmailRow({ id, title, subject, description, time }) {
   const history = useHistory();
   const dispatch = useDispatch();
 
-  const openMail = sel => {
+  const openMail = () => {
     dispatch(
       selectMail({
         id,
@@ -22,7 +22,6 @@ function EmailRow({ id, title, subject, description, time }) {
         time,
       })
     );
-
     history.push('/mail');
   };
 

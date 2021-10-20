@@ -1,15 +1,15 @@
 import React from 'react';
-import '../styles/SendMail.css';
-import CloseIcon from '@material-ui/icons/Close';
-import { Button } from '@material-ui/core';
-import { useForm } from 'react-hook-form';
-import { useDispatch } from 'react-redux';
-import { closeSendMessage } from '../features/mailSlice';
-import { db } from '../firebaseConfig.js';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
 import 'firebase/compat/auth';
 import 'firebase/compat/storage';
+import { useForm } from 'react-hook-form';
+import CloseIcon from '@material-ui/icons/Close';
+import { Button } from '@material-ui/core';
+import { useDispatch } from 'react-redux';
+import { closeSendMessage } from '../features/mailSlice';
+import { db } from '../firebaseConfig.js';
+import '../styles/SendMail.css';
 
 function SendMail() {
   const {

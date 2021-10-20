@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './styles/index.css';
+import { Provider } from 'react-redux';
 import App from './components/App';
 import store from './app/store';
-import { Provider } from 'react-redux';
+import './styles/index.css';
 
 ReactDOM.render(
   <React.StrictMode>
