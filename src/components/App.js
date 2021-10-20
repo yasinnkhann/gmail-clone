@@ -9,7 +9,7 @@ import SendMail from './SendMail.js';
 import Login from './Login.js';
 import { selectSendMessageIsOpen } from '../features/mailSlice.js';
 import { selectUser, login } from '../features/userSlice.js';
-import { auth } from '../firebaseConfig';
+import { auth } from '../firebaseConfig.js';
 import '../styles/App.css';
 
 function App() {
