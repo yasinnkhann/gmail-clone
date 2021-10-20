@@ -1,5 +1,5 @@
 import React from 'react';
-import './Mail.css';
+import '../styles/Mail.css';
 import { IconButton } from '@material-ui/core';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import MoveToInboxIcon from '@material-ui/icons/MoveToInbox';
@@ -17,7 +17,7 @@ import { useSelector } from 'react-redux';
 import UnfoldMoreIcon from '@material-ui/icons/UnfoldMore';
 import PrintIcon from '@material-ui/icons/Print';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
-import { selectOpenMail } from './features/mailSlice';
+import { selectOpenMail } from '../features/mailSlice';
 
 function Mail() {
   const history = useHistory();

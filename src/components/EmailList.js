@@ -10,11 +10,11 @@ import SettingsIcon from '@material-ui/icons/Settings';
 import InboxIcon from '@material-ui/icons/Inbox';
 import PeopleIcon from '@material-ui/icons/People';
 import LocalOfferIcon from '@material-ui/icons/LocalOffer';
-import './EmailList.css';
-import Section from './Section';
-import EmailRow from './EmailRow';
+import '../styles/EmailList.css';
+import Section from './Section.js';
+import EmailRow from './EmailRow.js';
 
-import { db } from './firebaseConfig';
+import { db } from '../firebaseConfig.js';
 
 function EmailList() {
   const [emails, setEmails] = useState([]);

@@ -1,11 +1,11 @@
 import React from 'react';
-import './SendMail.css';
+import '../styles/SendMail.css';
 import CloseIcon from '@material-ui/icons/Close';
 import { Button } from '@material-ui/core';
 import { useForm } from 'react-hook-form';
 import { useDispatch } from 'react-redux';
-import { closeSendMessage } from './features/mailSlice';
-import { db } from './firebaseConfig';
+import { closeSendMessage } from '../features/mailSlice';
+import { db } from '../firebaseConfig.js';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
 import 'firebase/compat/auth';

@@ -3,10 +3,10 @@ import Checkbox from '@material-ui/core/Checkbox';
 import { IconButton } from '@material-ui/core';
 import StarBorderOutlinedIcon from '@material-ui/icons/StarBorderOutlined';
 import LabelImportantOutlinedIcon from '@material-ui/icons/LabelImportantOutlined';
-import './EmailRow.css';
+import '../styles/EmailRow.css';
 import { useHistory } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { selectMail } from './features/mailSlice';
+import { selectMail } from '../features/mailSlice';
 
 function EmailRow({ id, title, subject, description, time }) {
   const history = useHistory();
